@@ -1,0 +1,53 @@
+<ion-view view-title="{{party.party_name}}">
+  <ion-content class="padding">
+    <div class="list card">
+
+      <div class="item item-avatar">
+        <img src="{{party.party_seal}}">
+        <h2>{{party.party_name}}</h2>
+        <p>{{party.abbreviation}}</p>
+      </div>
+
+      <div class="item item-image">
+        <img src="{{party.party_flag}}">
+      </div>
+
+      <div class="list">
+
+        <div class="item item-divider">
+            Chairman
+        </div>
+
+        <div class="item" ng-repeat="chairman in party.chairman">
+            {{chairman}}
+        </div>
+
+        <div class="item item-divider">
+            Leadership
+        </div>
+
+        <div class="item" ng-repeat="leadership in party.leadership">
+            {{leadership}}
+        </div>
+
+        <div class="item item-divider">
+            Region
+        </div>
+
+        <div class="item">
+            {{party.region}}
+        </div>
+
+        <div class="item item-divider">
+            Headquarters
+        </div>
+
+        <div class="item item-text-wrap">
+            {{party.headquarters}}
+        </div>
+
+      </div>
+
+    </div>
+  </ion-content>
+</ion-view>

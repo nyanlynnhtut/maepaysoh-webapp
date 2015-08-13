@@ -1,0 +1,11 @@
+<ion-view view-title="Candidates">
+  <ion-content>
+    <ion-list>
+      <ion-item class="item-remove-animate item-icon-right" ng-repeat="candidate in candidates" type="item-text-wrap" href="#/tab/candidate/{{candidate.id}}">
+        <h2>{{candidate.name}}</h2>
+        <p>{{candidate.legislature}}</p>
+        <i class="icon ion-chevron-right icon-accessory"></i>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

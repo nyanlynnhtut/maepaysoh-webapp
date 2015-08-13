@@ -1,0 +1,12 @@
+<ion-view view-title="Parties">
+  <ion-content>
+    <ion-list>
+      <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="party in parties" type="item-text-wrap" href="#/tab/party/{{party._id}}">
+        <img ng-src="{{party.party_seal}}">
+        <h2>{{party.party_name}}</h2>
+        <p>{{party.abbreviation}}</p>
+        <i class="icon ion-chevron-right icon-accessory"></i>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
